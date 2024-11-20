@@ -31,6 +31,9 @@ client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 	const command = interaction.client.commands.get(interaction.commandName);
 
+	if(interaction.commandName === 'studietid'){
+		await interaction.reply({content: 'det er studietid', ephemeral: true});
+	}
 	if (!command) {
 		console.error(`No command matching ${interaction.commandName} was found.`);
 		return;
