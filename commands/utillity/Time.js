@@ -6,7 +6,7 @@ module.exports = {
         .setDescription("Sets a countdown timer for study time"),
     
     async execute(interaction) {
-        await interaction.reply("tudy time started!");
+        await interaction.reply("study time started!");
         // You can add more code here for the countdown functionality.
     },
 };
